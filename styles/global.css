@@ -1,0 +1,212 @@
+:root {
+    --bg-primary: #F4F4F4;
+    --text-light: #FFFFFF;
+    --text-dark: #1D1D1F;
+    --title-primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73;
+    --action-color: #2997FF;
+    --spirited-main-color: #DED2B9;
+}
+
+header {
+    background-color: var(--bg-primary);
+    color: var(--text-dark);
+    height: fit-content;
+    opacity: 0.9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 12px 0;
+}
+
+header nav ul {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.link:hover {
+    border-color: #FD9536;
+    /* Cor da borda quando o mouse está sobre o link */
+}
+
+header nav ul li {
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+main section {
+    text-align: center;
+    position: relative;
+}
+
+main section img {
+    width: 100%;
+    height: auto;
+}
+
+main section a:hover {
+    text-decoration: underline;
+}
+
+main .main-section h1 {
+    color: var(--title-primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .main-section h2 {
+    color: var(--subtitle-color);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main .main-section sub {
+    font-size: 0.9rem;
+}
+
+main .main-section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
+
+main .spirited-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .spirited-section .image {
+    flex: 1;
+    padding: 20px;
+}
+
+main .spirited-section img {
+    max-width: 50%;
+}
+
+main .spirited-section .container {
+    position: absolute;
+    background-color: var(--text-light);
+    left: 50%;
+    transform: translateX(-50%);
+    flex: 1;
+}
+
+main .spirited-section>div:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--text-dark);
+    letter-spacing: -0.6px;
+    flex: 1;
+}
+
+main .spirited-section>div:first-child h2 {
+    margin-top: 20px;
+    flex: 1;
+}
+
+main .spirited-section p {
+    color: var(--title-primary-color);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.11px;
+}
+
+main .iphone-section h2 {
+    color: var(--text-dark);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .iphone-section p {
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main .iphone-section .link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+main .iphone-section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}

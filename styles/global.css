@@ -135,13 +135,14 @@ main .main-section .text-wrapper {
 
 main .spirited-section {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 main .spirited-section .image {
     flex: 1;
     padding: 20px;
+    text-align: right;
+    position: absolute;
+    top: 0;
 }
 
 main .spirited-section img {
@@ -149,32 +150,27 @@ main .spirited-section img {
 }
 
 main .spirited-section .container {
-    position: absolute;
+    position: relative;
     background-color: var(--text-light);
-    left: 50%;
-    transform: translateX(-50%);
-    flex: 1;
+    height: 1000px;
+    text-align: left;
+    padding: 50px;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 75%;
 }
 
 main .spirited-section>div:first-child p {
     font-size: 2rem;
     font-weight: bold;
     line-height: 2.5rem;
+    margin-top: 100px;
     color: var(--text-dark);
     letter-spacing: -0.6px;
-    flex: 1;
 }
 
 main .spirited-section>div:first-child h2 {
     margin-top: 20px;
-    flex: 1;
-}
-
-main .spirited-section p {
-    color: var(--title-primary-color);
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    letter-spacing: 0.11px;
 }
 
 main .iphone-section h2 {

@@ -28,6 +28,11 @@ header nav ul {
     padding: 0 2rem;
 }
 
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
 .link {
     display: inline-block;
     padding: 10px;
@@ -158,6 +163,7 @@ main .spirited-section .container {
     z-index: 1;
     overflow: hidden;
     opacity: 75%;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 main .spirited-section>div:first-child p {
@@ -171,6 +177,18 @@ main .spirited-section>div:first-child p {
 
 main .spirited-section>div:first-child h2 {
     margin-top: 20px;
+}
+
+main .iphone-section img {
+    margin-top: 50px;
+    flex: 1;
+    left: 0;
+}
+
+main .iphone-section .container-units {
+    background-color: var(--text-light);
+    display: flex;
+    width: 100%;
 }
 
 main .iphone-section h2 {
@@ -205,4 +223,8 @@ main .iphone-section .text-wrapper {
     flex-direction: column;
     align-items: center;
     margin-top: 51px;
+}
+
+main .exames-section {
+    flex: auto;
 }
